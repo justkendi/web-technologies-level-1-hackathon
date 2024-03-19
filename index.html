@@ -1,24 +1,69 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kendi</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+<body>
+<nav>
+  <h1>Welcome to Kendi's Page</h1>
+</nav>
+<main>
+  <section class="about">
+  <p>Below is a link to my GitHub account. Feel free to follow.
+    Thanks in advance.
+  </p><br>
 
+  <a href="https://github.com/justkendi" target="_blank">Kendi's Github Account</a><br><br>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  <section>
+    <img src="image2.jpg" alt="Image of pride of lion" width="500" height="500"><br><br>
+  </section> 
+          
+  <section class="form-container">
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="gender">Gender:</label><br><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+      </fieldset><br><br>
 
+      <label for="subjects">Subjects:</label>
+      <select id="subjects" name="subjects"><br><br>
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="art-craft">Art and Craft</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+      </select><br><br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+      <input type="hidden" name="sessionId" value="12345">
+
+      <button type="reset">Cancel</button>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</main>
+</body>
+
+</html>
